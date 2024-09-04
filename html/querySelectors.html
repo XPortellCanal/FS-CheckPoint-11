@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>JS Event listeners</title>
+</head>
+<body>
+    <div class="coolDiv" id="nice">div one</div>
+    <div class="coolDiv" id="notNice">div two</div>
+    <div class="coolDiv">div two</div>
+     
+</body>
+
+<script>
+    const firstCoolDiv = document.querySelector(".coolDiv");
+   // console.log(firstCoolDiv) //? <div class="coolDiv" id="nice">div one</div>
+
+    const allCoolDiv = document.querySelectorAll("coolDiv");
+    //console.log(allCoolDiv); //?<div class="coolDiv" id="nice">div one</div>
+    const coolAndNiceDiv = document.querySelector(".coolDiv #nice");
+    console.log(coolAndNiceDiv); //?<div class="coolDiv" id="nice">div one</div>
+</script>
+
+</html>

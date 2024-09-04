@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>JS Event listeners</title>
+</head>
+<body>
+    <div class="coolDiv" id="notNice">div one</div>
+    <div class="coolDiv" id="nice">div two</div>
+    <div class="coolDiv">div three</div>
+     
+</body>
+
+<script>
+    const firstCoolDiv = document.querySelector(".coolDiv");
+    console.log(firstCoolDiv) //? <div class="coolDiv" id="notNice">div one</div>
+    const coolAndNiceDiv = document.querySelector(".coolDiv#nice");
+    console.log(coolAndNiceDiv); //?<div class="coolDiv" id="nice">div one</div>
+    const allCoolDiv = document.querySelectorAll(".coolDiv"); 
+    console.log(allCoolDiv); //? NodeList(3) [div#notNice.coolDiv, div#nice.coolDiv, div.coolDiv]
+</script>
+</html>

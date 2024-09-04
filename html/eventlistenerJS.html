@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>JS Event listeners</title>
+</head>
+<body>
+    <input value="Log in" class='myButton' type="button">
+</body>
+
+<script>
+    const myButton = document.querySelector(".myButton");
+
+    function myFunction(){
+        confirm("You just clicked the button");
+    }
+    
+    myButton.addEventListener("click", myFunction);
+</script>
+
+</html>
